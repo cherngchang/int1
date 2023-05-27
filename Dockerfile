@@ -1,5 +1,5 @@
 FROM openjdk:11
 WORKDIR /app
 COPY src /app/src
-RUN javac src/HelloWorld.java
-CMD ["java", "src/HelloWorld"]
+RUN javac -d . src/HelloWorld.java
+CMD ["java", "-cp", ".", "srcs.HelloWorld"]
