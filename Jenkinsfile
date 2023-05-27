@@ -10,7 +10,7 @@ pipeline {
     
     stage('Test') {
       steps {
-        sh 'docker run my-java-app java src/HelloWorld'
+        sh 'docker run my-java-app java src.HelloWorld'
       }
     }
     
