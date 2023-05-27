@@ -10,7 +10,7 @@ pipeline {
     
     stage('Test') {
       steps {
-        sh 'docker run my-java-app'
+        sh 'docker run -v $(pwd)/src:/app/src my-java-app'
       }
     }
     
